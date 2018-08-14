@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Kakariko Village Bazaar</h1>
+    <ol>
+      <li>Milk --------------- $10.00</li>
+      <button class="select" onclick="addItem('Milk', 10.00);"> Add </button><br><br>
+      <li>Arrows(30) ------$60.00</li>
+      <button class="select" onclick="addItem('Arrows(30)', 60.00);"> Add </button><br><br>
+      <li>Green Potion---$30.00</li>
+      <button class="select" onclick="addItem('Green Potion', 30.00);"> Add </button><br><br>
+      <li>Shield   ------------$80.00</li>
+      <button class="select" onclick="addItem('Shield', 80.00);"> Add </button><br><br>
+      <li>Bombs(5)--------$35.00</li>
+      <button class="select" onclick="addItem('Bombs(5)', 35.00);"> Add </button><br><br>
+    </ol>
+
+    <div id="checkout">
+      Items for Purchase:
+
+    </div><br>
+    <div><button class="select" onclick="totalMyPrices();"> Get My Bill </button></div><br>
+    <span id="total">
+      Total: _______
+    </span>
+    <script src="script.js"></script>
+  </body>
+</html>
